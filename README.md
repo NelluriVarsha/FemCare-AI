@@ -210,51 +210,6 @@ The dataset used by the project is included as:
 PCOS_data.csv
 ```
 
----
-
-## ⚙️ Installation
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/NelluriVarsha/FemCare-AI.git
-```
-
-### 2. Navigate to the Project
-
-```bash
-cd FemCare-AI
-```
-
-### 3. Create a Virtual Environment
-
-Windows:
-
-```powershell
-python -m venv venv
-```
-
-Activate it:
-
-```powershell
-venv\Scripts\activate
-```
-
-### 4. Install Required Dependencies
-
-Install the required Python packages used by the application.
-
-For example:
-
-```powershell
-pip install streamlit pandas numpy scikit-learn
-```
-
-If the project contains a `requirements.txt` file, use:
-
-```powershell
-pip install -r requirements.txt
-```
 
 ---
 
