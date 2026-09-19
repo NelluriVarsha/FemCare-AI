@@ -1,0 +1,257 @@
+/* ==========================================
+   FEMCARE AI PREMIUM THEME
+========================================== */
+
+/* Main App Background */
+
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #0a0618,
+        #140b2c,
+        #1c103d
+    );
+
+    background-attachment: fixed;
+    color: white;
+}
+
+/* ==========================================
+   WOMEN'S WELLNESS DECORATIONS
+========================================== */
+
+.stApp::before {
+    content: "♀";
+
+    position: fixed;
+
+    top: 12%;
+    right: 5%;
+
+    font-size: 300px;
+
+    color: rgba(255,255,255,0.03);
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+.stApp::after {
+    content: "🌸";
+
+    position: fixed;
+
+    bottom: 5%;
+    left: 5%;
+
+    font-size: 220px;
+
+    color: rgba(255,255,255,0.03);
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+/* Keep content above decorations */
+
+[data-testid="stAppViewContainer"] {
+    position: relative;
+    z-index: 1;
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+section[data-testid="stSidebar"] {
+
+    background: linear-gradient(
+        180deg,
+        #4c1d95,
+        #7e22ce,
+        #c084fc
+    );
+}
+
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+/* Sidebar Menu Items */
+
+[data-testid="stSidebarNav"] a {
+
+    background: rgba(255,255,255,0.08);
+
+    border-radius: 14px;
+
+    margin-bottom: 10px;
+
+    padding: 10px !important;
+
+    color: white !important;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+
+[data-testid="stSidebarNav"] a:hover {
+
+    background: linear-gradient(
+        90deg,
+        #9333ea,
+        #c084fc
+    );
+
+    transform: translateX(5px);
+
+    box-shadow: 0 0 15px rgba(192,132,252,0.5);
+}
+
+/* Active Page */
+
+[data-testid="stSidebarNav"] a[aria-current="page"] {
+
+    background: linear-gradient(
+        90deg,
+        #9333ea,
+        #c084fc
+    );
+
+    color: white !important;
+
+    font-weight: bold;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.stButton > button {
+
+    background: linear-gradient(
+        90deg,
+        #9333ea,
+        #c084fc
+    );
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.stButton > button:hover {
+
+    transform: scale(1.03);
+
+    box-shadow: 0 0 20px #c084fc;
+}
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+.stTextInput input,
+.stNumberInput input,
+textarea {
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.05
+    ) !important;
+
+    color: white !important;
+
+    border: 1px solid #c084fc !important;
+
+    border-radius: 12px !important;
+}
+
+/* ==========================================
+   SELECT BOXES
+========================================== */
+
+.stSelectbox div {
+
+    border-radius: 12px;
+}
+
+/* ==========================================
+   METRIC CARDS
+========================================== */
+
+[data-testid="stMetric"] {
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.05
+    );
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(
+        255,
+        255,
+        255,
+        0.1
+    );
+
+    border-radius: 16px;
+
+    padding: 15px;
+}
+
+/* ==========================================
+   TABLES
+========================================== */
+
+[data-testid="stDataFrame"] {
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h1 {
+
+    color: #d8b4fe !important;
+
+    font-weight: 800 !important;
+}
+
+h2 {
+
+    color: #f5d0fe !important;
+}
+
+h3 {
+
+    color: white !important;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+    visibility: hidden;
+}
