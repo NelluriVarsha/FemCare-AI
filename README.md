@@ -97,44 +97,44 @@ The report module allows health-related information and results to be presented 
 
 ## 🏗️ Project Architecture
 
-The overall application workflow can be represented as:
+FemCare AI follows a modular application architecture that integrates user management, health assessment, machine learning-based PCOS prediction, health scoring, menstrual tracking, and report generation.
 
-```text
-                 ┌──────────────────────┐
-                 │      User Access     │
-                 └──────────┬───────────┘
-                            │
-                ┌───────────▼───────────┐
-                │ Registration / Login  │
-                └───────────┬───────────┘
-                            │
-                   ┌────────▼────────┐
-                   │  User Profile   │
-                   └────────┬────────┘
-                            │
-              ┌─────────────▼─────────────┐
-              │      Health Assessment    │
-              └─────────────┬─────────────┘
-                            │
-                ┌───────────▼───────────┐
-                │    ML-based PCOS      │
-                │       Prediction       │
-                └───────────┬───────────┘
-                            │
-             ┌──────────────▼──────────────┐
-             │       Health Score          │
-             │     & Recommendations       │
-             └──────────────┬──────────────┘
-                            │
-              ┌─────────────▼─────────────┐
-              │          Dashboard        │
-              └─────────────┬─────────────┘
-                            │
-                 ┌──────────▼──────────┐
-                 │ Menstrual Tracking  │
-                 │ & Health Reports    │
-                 └─────────────────────┘
+```mermaid
+flowchart TD
+    A[User] --> B[Registration / Login]
+    B --> C[User Profile]
+    C --> D[Health Assessment]
+
+    D --> E[Data Processing]
+    E --> F[PCOS Prediction Model]
+    E --> G[Health Score Calculation]
+
+    F --> H[Prediction Results]
+    G --> I[Health Insights]
+
+    H --> J[Recommendation Engine]
+    I --> J
+
+    J --> K[Streamlit Dashboard]
+
+    K --> L[Menstrual Tracker]
+    K --> M[Health Reports]
+    K --> N[Health History]
 ```
+
+### Machine Learning Workflow
+
+```mermaid
+flowchart TD
+    A[PCOS Dataset] --> B[Data Preprocessing]
+    B --> C[Feature Processing]
+    C --> D[Trained ML Model]
+    D --> E[PCOS Risk Prediction]
+    E --> F[Prediction Output]
+    F --> G[Health Insights]
+```
+
+**Note:** The architecture represents the intended application workflow. The exact preprocessing, model type, and prediction logic should match your implementation.
 
 ---
 
@@ -172,6 +172,17 @@ FemCare-AI/
 ├── .gitignore
 └── README.md
 ```
+
+### Main Components
+
+- **app.py** – Main Streamlit application entry point.
+- **database.py** – Database-related operations.
+- **pcos_predictor.py** – PCOS prediction functionality.
+- **health_score.py** – Health score calculation.
+- **recommendation.py** – Health recommendation logic.
+- **pages/** – Individual application pages.
+- **PCOS_data.csv** – Dataset used in the project.
+- **pcos_model.pkl** – Trained machine learning model.
 
 
 ```
