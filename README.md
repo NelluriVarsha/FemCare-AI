@@ -205,7 +205,7 @@ FemCare-AI/
 
 The prediction workflow can be summarized as:
 
-```text
+```mermaid
 User Health Information
           │
           ▼
