@@ -135,6 +135,18 @@ flowchart TD
 ```
 
 **Note:** The architecture represents the intended application workflow. The exact preprocessing, model type, and prediction logic should match your implementation.
+---
+
+## 🛠️ Technologies Used
+
+| Category | Technologies |
+|---|---|
+| Programming Language | Python |
+| Frontend / Application Framework | Streamlit |
+| Machine Learning | Trained PCOS Prediction Model |
+| Data Processing | Python-based Data Processing |
+| Database | Local Database |
+| Development Tools | VS Code, Git, GitHub |
 
 ---
 
