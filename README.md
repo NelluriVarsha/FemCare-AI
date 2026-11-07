@@ -143,9 +143,13 @@ flowchart TD
 |---|---|
 | Programming Language | Python |
 | Frontend / Application Framework | Streamlit |
-| Machine Learning | Trained PCOS Prediction Model |
-| Data Processing | Python-based Data Processing |
-| Database | Local Database |
+| Machine Learning Library | Scikit-learn |
+| ML Algorithm | Random Forest Classifier |
+| Data Processing | Pandas |
+| Model Serialization | Joblib |
+| Prediction Logic | Rule-Based Scoring System |
+| Dataset | PCOS Dataset (CSV) |
+| Styling | HTML, CSS |
 | Development Tools | VS Code, Git, GitHub |
 
 ---
