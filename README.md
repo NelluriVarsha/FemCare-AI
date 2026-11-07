@@ -414,7 +414,7 @@ FemCare AI can serve as a foundation for developing a more comprehensive AI-assi
 
 Future development could focus on combining:
 
-```text
+```mermaid
 Machine Learning
        +
 Health Assessment
